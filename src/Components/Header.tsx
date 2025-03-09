@@ -41,8 +41,12 @@ const Header = () => {
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-        
       </header>
+
+      {/* Promo Banner */}
+      <div className="bg-[#D4AF37] text-[#1E3A5F] text-center py-2 font-semibold text-lg">
+        Special Offer: Get 20% Off Your First Booking! Use Code: <span className="font-bold">BLUEROOF20</span>
+      </div>
 
       {/* Mobile Navigation */}
       {menuOpen && (
@@ -65,7 +69,6 @@ const Header = () => {
             </a>
           </div>
         </nav>
-        
       )}
     </>
   );
