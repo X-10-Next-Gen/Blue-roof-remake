@@ -60,6 +60,7 @@ const LandingPage = () => {
         </div>
       </div>
 
+
       {/* Featured Rooms & Suites */}
       {/* <div className="p-10">
         <h1 className="text-center text-4xl font-bold text-[#D4AF37]" data-aos="fade-up">
@@ -91,29 +92,31 @@ const LandingPage = () => {
       </div> */}
 
       {/* Contact Us Section */}
-      <div className="p-10">
-        <h1 className="text-center text-4xl font-bold text-[#D4AF37]" data-aos="fade-up">
-          Contact Us
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          {[
-            { title: "📞 Call Us", text: "+234 706 177 8948", link: "tel:+2347061778948" },
-            { title: "✉️ Email Us", text: "Blueroofservicedepartment@gmail.com", link: "mailto:Blueroofservicedepartment@gmail.com" },
-            { title: "💬 WhatsApp", text: "Chat with us on WhatsApp", link: "https://wa.me/+2347061778948" },
-            { title: "📍 Visit Us", text: "6 Blueroof Close, Abeokuta", link: "https://www.google.com/maps/place/Blueroof+Serviced+Apartments/" },
-          ].map((contact, index) => (
-            <a
-              key={index}
-              href={contact.link}
-              className="p-6 bg-[#D4AF37] rounded-lg text-[#1E3A5F] transition-transform duration-300 transform hover:scale-105 hover:bg-[#b38f2f] block"
-              data-aos="fade-up"
-            >
-              <h2 className="text-2xl font-bold">{contact.title}</h2>
-              <p className="mt-2">{contact.text}</p>
-            </a>
-          ))}
-        </div>
-      </div>
+      <div className="p-6 sm:p-8 md:p-10">
+  <h1 className="text-center text-3xl sm:text-4xl font-bold text-[#D4AF37]" data-aos="fade-up">
+    Contact Us
+  </h1>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6 p-4 sm:p-5">
+    {[
+      { title: "📞 Call Us", text: "+234 706 177 8948", link: "tel:+2347061778948" },
+      { title: "✉️ Email Us", text: "Blueroofservicedepartment@gmail.com", link: "mailto:Blueroofservicedepartment@gmail.com" },
+      { title: "💬 WhatsApp", text: "Chat with us on WhatsApp", link: "https://wa.me/+2347061778948" },
+      { title: "📍 Visit Us", text: "6 Blueroof Close, Abeokuta", link: "https://www.google.com/maps/place/Blueroof+Serviced+Apartments/" },
+    ].map((contact, index) => (
+      <a
+        key={index}
+        href={contact.link}
+        className="p-4 sm:p-5 flex flex-col bg-[#D4AF37] rounded-lg text-[#1E3A5F] transition-transform duration-300 transform hover:scale-105 hover:bg-[#b38f2f] 
+        w-full max-w-sm mx-auto text-center break-words whitespace-normal"
+        data-aos="fade-up"
+      >
+        <h2 className="text-xl sm:text-2xl font-bold">{contact.title}</h2>
+        <p className="mt-2 text-sm sm:text-base break-words">{contact.text}</p>
+      </a>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };
